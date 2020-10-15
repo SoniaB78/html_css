@@ -1,0 +1,67 @@
+/* /!\ attention, montrer au fure et à mesure les changements*/
+body{
+    font-size: 25px;/* taille de la police */
+}
+
+h1{
+    background-color: darkslategray;/* couleur de fond*/
+    color: white;/* couleur du texte */
+}
+
+section p{
+    color: red; /* tous p qui sont dans section*/
+}
+
+section p:first-child{
+    color: darkviolet;/* 1er p dans section */
+}
+
+section p:last-child{
+    color: lightpink;/* dernier p dans section */
+}
+
+section p:nth-child(even){/* numéro de l'enfant */
+    color: lightskyblue;/* les p pairs */
+}
+
+section p:nth-child(odd){/* numéro de l'enfant */
+    color: orchid;/* les p impairs */
+}
+
+section p:nth-child(3), section p:nth-child(10){ /* deux selecteurs séparés par une virgule les numéro 3 et 10*/
+    color: orange;
+}
+
+.zone1{
+    color: #dc143c;
+}
+
+.zone2{
+    color: #0f6257;
+}
+
+.lime{
+    color: lime;
+}
+
+#zone3{
+    background-color: lightsalmon;
+}
+
+#zone3:before{/* ajoute du contenu avant le contenu de la balise */
+    content: "Rajouté avant "; /* la propriété content est obligatoire quand on utilise before, le contenu du before ne s'affiche pas dans le html, on peut laisser cette propriété vide, on peut même ajouter des attributs à une balise (exemple: title)*/
+}
+
+#zone3:after{
+    content: ", ajouté après";
+}
+
+li:nth-of-type(2){
+    background-color: darkred;
+    color: white;
+}
+
+/* sélectionner le span qui n'a pas de class et seulement lui pour lui appliquer du style (pas le droit de toucher au html) */
+.zone4 span{
+    font-size: 40px;
+}

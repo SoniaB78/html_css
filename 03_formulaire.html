@@ -9,12 +9,13 @@
 <body>
     <!-- je déclare mon formulaire avec la balise form -->
     <form>
-
+        <!-- Deux manières de déclarer le label -->
         <!-- pseudo -->
-        <label>
+        <label><!-- input dans label -->
             Pseudonyme
             <input type="text" id="pseudo" name="pseudo" placeholder="exemple" required> 
-            <!-- l'id sert à utiliser la donnée avec d'autres langages, 
+            <!-- 
+                l'id sert à utiliser la donnée avec d'autres langages, 
                 le placeholder contient le texte qui apparaît dans l'input
                 type précise le type de donnée récupérée
                 required précise au navigateur que le champs est à renseigner obligatoirement
@@ -24,7 +25,7 @@
         <br>
 
         <!-- mot de passe -->
-        <label for="mdp"> 
+        <label for="mdp"> <!-- label au dessus de l'input -->
             Mot de passe <span title="le mot de passe peut contenir....">*</span>
         </label>
         <input type="password" name="mdp" placeholder="Mot de passe" required>

@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+    background-color: rgb(251, 230, 201);
+}
+
+div{
+    width: 90%;
+    margin: 0 auto;
+    /*
+    margin: 0 auto 0 auto; -> haut droite bas gauche
+    margin: 0;
+    margin: 0 auto 1; (gauche ->auto)
+    */
+    background-color:lightskyblue;
+}
+
+.boite{
+    height: 11vh;
+    width: 18vh;
+    padding: 5vh;
+    /* 
+    EM : relatif à l'élément parent
+    REM : relatif àç la balise html
+    % : relatif à l'élément parent (%)
+    VW : relatif à la largeur de l'écran
+    VH : relatif à la hauteur de l'écran
+    */
+    background: url(../img/siamois.jpg);
+    background-repeat: no-repeat;
+    border: 5px double orchid;
+    margin: 2vh;
+    float: left;/* effet flottant, place les élément côte à côte alors que le flux standar des éléments les placent les uns en-dessous des autres */
+    transition: margin 0.5s;
+}
+
+.boite:hover{ /* la pseudo-classe :hover modifie l'affichage au survol de la souris */
+    margin-top:10vh;
+}
+
+.clear{
+    clear: both; /* supprime l'effet flottant à droite et gauche */
+}
+
+p{
+    background-color: mediumaquamarine;
+}
+
+p span{
+    background-color: rgb(129, 129, 195);
+}

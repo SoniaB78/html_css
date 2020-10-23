@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille flex CSS</title>
+    <link rel="stylesheet" href="css/12_grille_flex.css">
+</head>
+<body>
+    <div class="conteneur">
+        <header class="col_12 jaune"></header>
+
+        <div class="row">
+            <div class="col_4 bleu">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa a qui quis provident cum iste? Laborum, praesentium laudantium? Quia, numquam. Exercitationem animi voluptatem dolorem praesentium porro qui dolorum minima, placeat consequuntur. Alias!
+                </p>
+            </div>
+
+            <div class="col_4 rose"> B </div>
+
+            <div class="col_4 vert">
+                <div class="row"><!-- .col-6*2 -->
+                    <div class="col_6 bleu">1/ sous-colonne</div>
+
+                    <div class="col_6">2/ sous-colonne</div>
+                </div>
+            </div>
+        </div>
+
+        <section class="row">
+            <div class="col_10 marge_1 rose">centre</div>
+        </section>
+
+        <hr class="col_12 bleu"> 
+
+        <footer class="row">
+            <div class="col_4"><!-- .col_4*3>p{coucou} -->
+                <p>coucou</p>
+            </div>
+
+            <div class="col_4">
+                <p>coucou</p>
+            </div>
+            
+            <div class="col_4">
+                <p>coucou</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

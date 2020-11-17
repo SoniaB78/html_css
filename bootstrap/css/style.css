@@ -1,0 +1,22 @@
+/* Nous allons surcharger le style de Bootstrap */
+/*  !important  force le style à être appliqué,     background-color: #d95700 !important;*/
+
+
+nav.navbar.bg-primary, .bg-primary, a.btn-primary, a.nav-link.active{
+    background-color: #d95700 !important;
+    border-color: #d95700;
+}
+
+body{
+    background-color: #ededed;
+}
+
+.jumbotron{
+    background-color: #ffffff!important;
+    border-top: 3px solid rgb(219, 219, 219);
+}
+
+a.card-link,
+a.nav-link{
+    color: #d95700;
+}

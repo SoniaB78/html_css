@@ -1,0 +1,52 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.img-1{
+    background-image: url(../img/ciel.jpg);
+}
+
+.img-2{
+    background-image: url(../img/pc.jpg);
+}
+
+.parallax{
+    /* image de fond */
+    background-image: url('../img/caraibes_martinique_boucaniers.jpg');
+    height: 100%;
+    background-attachment: fixed; /* retire le scoll, laisse l'image reste "fixed" */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px){
+    .parallax{
+        background-attachment: scroll;
+    }
+}
+
+.scroll{
+    height: 280px;
+    font-size: 36px;
+}
+
+.scroll p{
+    margin: 0;
+    text-align: center;
+    line-height: 190px;
+}
+
+#scroll_1{
+    background-image: url(../img/sans-titre.png);
+}
+
+#scroll_2{
+    background-image: url(../img/thumb-1920-515590.jpg);
+}
+
+#scroll_3{
+    background-image: url(../img/Matrix-revolution.jpg);
+}

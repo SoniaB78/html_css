@@ -1,0 +1,64 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parallax{
+    /* image de fond */
+    background-image: url('../img/caraibes_martinique_boucaniers.jpg');
+    height: 100%;
+    background-attachment: fixed; /* retire le scoll, laisse l'image reste "fixed" */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-device-width: 1366px){
+    .parallax{
+        background-attachment: scroll;
+    }
+}
+
+.scroll{
+    height: 280px;
+    font-size: 36px;
+}
+
+.scroll p{
+    margin: 0;
+    text-align: center;
+    line-height: 190px;
+}
+
+#scroll_1{
+    background-image: -webkit-gradient(linear,
+        left bottom,
+        right bottom,
+        color-stop(0, rgb(230, 18, 18)),
+        color-stop(0, rgb(255, 202, 63)),
+        color-stop(0.5, rgb(63, 201, 50)),
+        color-stop(1, rgb(33, 54, 237)));
+    background-image: -o-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);
+    background-image: -moz-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);
+    background-image: -webkit-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);
+    background-image: -ms-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);
+    background-image: linear-gradient(to right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);
+}
+
+#scroll_2{
+    background-image: url(../img/woodPlank.jpg);
+}
+
+#scroll_3{
+    background-image: -webkit-gradient(linear,
+        left bottom,
+        right bottom,
+        color-stop(0, rgb(230, 18, 18)),
+        color-stop(1, rgb(255, 202, 63)));
+    background-image: -o-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+    background-image: -moz-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+    background-image: -webkit-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+    background-image: -ms-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+    background-image: linear-gradient(to right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+}
